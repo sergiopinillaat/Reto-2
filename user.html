@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+</head>
+<body>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>ROLID</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+            
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+
+    <form>
+        <div>
+            <label for="txtId">ID</label>
+            <input id="txtId" type="number" placeholder="Ingrese el id">
+        </div>
+        <div>
+            <label for="txtName">NAME</label>
+            <input id="txtName" type="text" placeholder="Ingrese el nombre">
+        </div>
+        <div>
+            <label for="txtAge">AGE</label>
+            <input id="txtAge" type="number" placeholder="Ingrese la edad">
+        </div>
+        <div>
+            <label for="txtRolId">ROLEID</label>
+            <input id="txtRolId" type="number" placeholder="Ingrese el rol id">
+        </div>
+        
+    </form>
+    <button onclick="crearUsuario()">Agregar</button>
+    <button onclick="actualizarUsuario()">Actualizar</button>
+    <button onclick="eliminarUsuarios()">Eliminar</button>
+
+    <script src="./scripts/user.js"></script>
+</body>
+</html>
